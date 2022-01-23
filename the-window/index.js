@@ -16,3 +16,5 @@ console.log(a)
 console.log(this.a)
 console.log(this)
 console.log(a)
+
+// eg, the log groups above are the exact same
