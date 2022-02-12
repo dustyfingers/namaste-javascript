@@ -40,7 +40,7 @@ function x() {
         // the js engine sets this function aside with a timer on it AND a binding to this val variable and its value
         // and moves to the next execution step
         function close(val) {
-            setTimeout(function() { console.log(val) }, i * 1000)
+            setTimeout(function() { console.log(val) }, val * 1000)
         }
 
         close(i)
