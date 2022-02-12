@@ -32,6 +32,16 @@ const b = function xyz() {
 // xyz()
 
 // difference between parameters and arguments
+// arguments are whats passed in, params are what are defined
+// parameters are num and string
+function take123(num, string) {
+    if (num !== 123) throw TypeError('num must be 123.')
+
+    return num + " " + string
+}
+
+// arguments are 123 and 'seven'
+take123(123, 'seven')
 
 // first class functions - the ability to use functions as values...eg
 const doStuff = () => console.log('doing stuf...')
